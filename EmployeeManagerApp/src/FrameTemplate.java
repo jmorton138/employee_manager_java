@@ -5,7 +5,7 @@ public class FrameTemplate extends JFrame {
 
     FrameTemplate() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setLayout(new FlowLayout());
+        this.setLayout(null);
         this.pack();
         this.setVisible(true);
 
