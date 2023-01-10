@@ -54,7 +54,7 @@ public class LoginPage extends JFrame {
                 boolean auth = login(username, password);
                 if (auth) {
                     loginFrame.dispose();
-                    MainMenu mainMenu = new MainMenu();
+                    MainMenu mainMenu = new MainMenu(this.con);
 
                 }
             } catch (SQLException throwables) {
