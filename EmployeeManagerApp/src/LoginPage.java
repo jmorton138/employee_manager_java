@@ -44,7 +44,6 @@ public class LoginPage extends JFrame {
         submitButton.setFont(new Font("Times New Roman", Font.PLAIN, 30));
         submitButton.setBounds(450, 400, 250, 50);
         loginFrame.add(submitButton);
-        // MainMenu mainMenu = new MainMenu();
 
         submitButton.addActionListener(actionEvent -> {
             String username = usernameField.getText();
@@ -54,7 +53,7 @@ public class LoginPage extends JFrame {
                 boolean auth = login(username, password);
                 if (auth) {
                     loginFrame.dispose();
-                    MainMenu mainMenu = new MainMenu();
+                    MainMenu mainMenu = new MainMenu(this.con);
 
                 }
             } catch (SQLException throwables) {
