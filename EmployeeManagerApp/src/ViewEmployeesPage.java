@@ -122,6 +122,7 @@ public class ViewEmployeesPage extends FrameTemplate {
                 JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
         empRecords.add(scrollBar);
         empRecords.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        empRecords.setPreferredSize(new Dimension(1100, 750));
         empRecords.pack();
         empRecords.setVisible(true);
 
