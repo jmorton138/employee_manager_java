@@ -20,6 +20,5 @@ public class App {
                 "jdbc:mysql://localhost:3306/" + dbName, db_username, db_password);
         System.out.println(con);
         LoginPage loginPage = new LoginPage(con);
-        loginPage.setVisible(true);
     }
 }
