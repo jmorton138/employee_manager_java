@@ -44,7 +44,6 @@ public class LoginPage extends JFrame {
         submitButton.setFont(new Font("Times New Roman", Font.PLAIN, 30));
         submitButton.setBounds(450, 400, 250, 50);
         loginFrame.add(submitButton);
-        // MainMenu mainMenu = new MainMenu();
 
         submitButton.addActionListener(actionEvent -> {
             String username = usernameField.getText();
